@@ -18,10 +18,17 @@
     "config": {
         "sort-packages": true
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:Wirone/sentry-php-sdk.git",
+            "info": "In order to get PHP8 support"
+        }
+    ],
     "require": {
-        "php": "^7.1",
+        "php": "^7.1||^8.0",
         "jean85/pretty-package-versions": "^1.5",
-        "sentry/sdk": "^2.1",
+        "sentry/sdk": "dev-2.x-php8@dev",
         "symfony/config": "^3.4||^4.0||^5.0",
         "symfony/console": "^3.4||^4.0||^5.0",
         "symfony/dependency-injection": "^3.4||^4.0||^5.0",
